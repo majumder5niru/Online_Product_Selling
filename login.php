@@ -54,7 +54,7 @@ include 'Library/dbconnect.php';
                 <label for="remember" class="radio">Stay Logged In</label>
               </div>
               <div class="col-sm-6 pr0 forgot">
-                <a href="#">Forgot password</a>
+                <a href="recover.php">Forgot password</a>
               </div>
               <div class="clr"></div>
               <div class="">
