@@ -49,7 +49,7 @@
 		<div class="form-group col-xs-6">
 			<label for="price">Price</label>
 			<div class="input-group">
-				<input type="text" class="form-control" name="price" id="price" value="<?php if(isset($rowNewsTl)) {echo $price;}?>"  placeholder="Package / Unit ">
+				<input type="text" class="form-control" name="price" id="price" value="<?php if(isset($rowNewsTl)) {echo $price;}?>"  placeholder="Price ">
 			</div>
 		</div>
 		

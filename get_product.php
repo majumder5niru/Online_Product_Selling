@@ -1,3 +1,4 @@
+
 <table class="table table-bordered table-condensed table-striped table-hover" id="tableData">
 	<thead>
 		<tr>
@@ -15,11 +16,16 @@
 	$i = 1;
 	while ($row = mysql_fetch_array($res))
 	{
+			
+			$s = $row['product_image'];
+			header("Content-type: image/jpeg");
+			//echo $row['product_image'];
+
 	?>
 	<tr>
 		<td><?php echo $i;?></td>
 		<td><?php echo $row['product_name'];?></td>
-		<td><?php echo $row['product_image'];?></td>
+		<td><img src="data:image/jpeg;base64,<?php echo base64_encode($s); ?>" /></td>
 		<td><?php echo $row['price'];?></td>
 		<td><?php echo $row['description'];?></td>
 		<td>

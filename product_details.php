@@ -76,13 +76,14 @@
 					function save() {
 						//alert('yes');
 						var product_name = document.MyForm.product_name.value;
+						var product_img = document.MyForm.product_img.value;
 						if(product_name==""){
 							alert("You did not enter your product name.Please provide it.");
 						}else{
 							 $.ajax({
 						        type: "POST",
 						        url: "save_product.php",
-						        data: $('#modal_form').serialize(),
+						        data: $('#modal_form').serialize()+ '&product_img=' + product_img,
 
 						    }).done(function(msg) {
 						        alert(msg);
@@ -95,11 +96,11 @@
 					}
 
 					function updatedata(code) {
-						
+						var product_img = document.MyForm.product_img.value;
 					    $.ajax({
 					        type: "POST",
 					        url: "update_product.php",
-					        data : $('#modal_form').serialize(),
+					        data : $('#modal_form').serialize()+ '&product_img=' + product_img,
 
 					    }).done(function(msg) {
 					        alert(msg);
