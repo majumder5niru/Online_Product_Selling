@@ -1,5 +1,4 @@
 
-<form action="delete.php" method="post">
 <table class="table table-bordered table-condensed table-striped table-hover" id="tableData">
 	<thead>
 		<tr>
@@ -30,12 +29,7 @@
 		<td><?php echo $row['price'];?></td>
 		<td><?php echo $row['description'];?></td>
 		<td>
-			<button class="btn btn-primary btn-xs" onclick="btn2(<?php echo $row['product_id'];?>)" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</button>
-			
-				<button class="btn btn-danger btn-xs" onclick="ConfirmDelete(<?php echo $row['product_id'];?>)"  >Delete</button>
-				<input type="hidden" name="product_id"id="product_id" value="<?php echo $row['product_id'];?>">
-			
-			
+			<button class="btn btn-primary btn-xs" onclick="btn2(<?php echo $row['product_id'];?>)" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Buy</button>
 		</td>
 	</tr>
 	
@@ -44,7 +38,7 @@
 	}
 	?>	
 </table>
-</form>
+
 <script type="text/javascript">
 	
 	    $(document).ready(function() {
@@ -73,19 +67,4 @@
             }
 	    });
 	}
-	
 </script>
-<script type="text/javascript">
-
-  function ConfirmDelete(product_id)
-  {		
-  
-    if (confirm("Delete Product?")){
-    	window.location.href = 'delete.php?product_id=' + product_id;
-    }
-             
-  }
-</script>
-
-
-  

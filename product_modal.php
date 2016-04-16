@@ -74,6 +74,7 @@
 	?>
 		<button type="button" onclick="updatedata('<?php echo $_POST['product_id']; ?>')" class="btn btn-primary" data-dismiss="modal">Update</button>
 	<?php }?>
+	
 </div>
 
 <script>

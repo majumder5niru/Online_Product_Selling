@@ -9,10 +9,11 @@
       <ul class="nav navbar-nav">
       	<li><a href = "home.php">Home</a></li>
       	<li><a href = "login.php">Log In</a></li>
-      	<li><a href = "user.php">Sign In</a></li>
+      	<li><a href = "user.php">Sign Up</a></li>
         <li><a href = "change_pass.php">Change Password</a></li>
         <li><a href = "update_profile.php">Update Profile</a></li>
         <li><a href = "product_details.php">Product Details</a></li>
+        <li><a href = "buy_product.php">Buy Product</a></li>
         <li><a href = "contact.php">Contact Us</a></li>
       </ul> 
       <ul class="nav navbar-nav navbar-right">

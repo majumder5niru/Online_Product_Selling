@@ -5,9 +5,8 @@
    	$product_name = $_POST['product_name'];
  	$description = $_POST['description'];
  	$price = $_POST['price'];
- 	echo $price;
  	$product_image = $_POST['product_img'];
- 	echo $product_image;
+
 	
 	if(isset($product_id))
 	{
