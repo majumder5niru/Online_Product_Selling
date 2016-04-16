@@ -1,13 +1,12 @@
  <?php
+
  	session_start();
 	include_once 'Library/dbconnect.php';
 	include_once "Library/Library.php";
 	include "header_page.php";
 	include "footer_page.php";
 	include "navbar.php";
-?>
-<?php
-	 
+
 	if (!empty($_SESSION['message'])) {
 	    echo '<b> '.$_SESSION['message'].'</b>';
 	    unset($_SESSION['message']);

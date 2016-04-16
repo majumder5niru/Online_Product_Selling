@@ -33,16 +33,18 @@ include 'Library/dbconnect.php';
           <div class="signin animated flipInY">
             <div class="avatar"></div>
             <form action="Authenticate.php" method="post" name="login">
+
             
               <div class="inputrow">
                 <input type="text" id="u_name" name="u_name" placeholder="Username" required/>
+
                 <label for="name" class="ion-person-stalker"></label>
               </div>
               <div class="inputrow">
                 <input type="password" id="pass" name="pass" placeholder="Password" required/>
                 <label for="pass" class="ion-locked"></label>
               </div>
-               
+
               <div class="col-sm-6 pr0 forgot">
                 <a href="recover.php">Forgot password</a>
               </div>

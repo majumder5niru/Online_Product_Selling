@@ -1,4 +1,5 @@
 <?php
+
   session_start(); 
 	include "header_page.php";
 	include "footer_page.php";
@@ -7,6 +8,7 @@
       echo '<b> '.$_SESSION['message'].'</b>';
       unset($_SESSION['message']);
   }
+
 ?>
 <nav class="navbar navbar-default">
   <div class="container-fluid">

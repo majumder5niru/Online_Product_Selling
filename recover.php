@@ -1,3 +1,4 @@
+
 <?php 
     session_start();
     include "Library/dbconnect.php"; 
@@ -5,6 +6,7 @@
     include "footer_page.php";
     include "navbar.php";
     error_reporting(0);
+
     if (isset($_POST['email'])){
         $email = $_POST['email'];
         $query = "SELECT * from user where email='$email'";
@@ -35,7 +37,9 @@
         }
         if($sentmail==1)
         {
+
            echo "<span style='color: #ff0000;'> Your Password Has Been Sent To Your Email Address.</span>";
+
         }
         else
         {
@@ -49,7 +53,9 @@
 
 <div class="cotainer">
     <div class="row">
+
         <form action="recover.php" method="post">
+
             <div class="form-group">
                 <div class="form-group col-sm-6">
                     <label for="name" class="col-sm-4 control-label input-sm">Enter your Email Address :</label>
