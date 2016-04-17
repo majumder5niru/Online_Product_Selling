@@ -44,7 +44,9 @@ include 'Library/dbconnect.php';
                 <input type="password" id="pass" name="pass" placeholder="Password" required/>
                 <label for="pass" class="ion-locked"></label>
               </div>
-
+              <div class="col-sm-6 pr0 forgot">
+                <a href="user.php">Not Registered? Register here</a>
+              </div>
               <div class="col-sm-6 pr0 forgot">
                 <a href="recover.php">Forgot password</a>
               </div>
