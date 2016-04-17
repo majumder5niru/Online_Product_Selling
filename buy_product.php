@@ -10,7 +10,8 @@
 		exit;
 	}
 	
-?>		<html>
+?>
+<html>
 	<body  data-skin-type="skin-polaris-blue" class="skin-colortic" onload="viewdata()">
 		<div id="u-app-wrapper"   class="collapse-true panel-fixed" >
 
@@ -26,7 +27,7 @@
 							<div class="modal-content">
 								<!--MODAL CONTENT-->
 								<?php
-									include 'product_modal.php';
+									//include 'product_modal.php';
 								?>
 							</div>
 						</div>
@@ -54,59 +55,6 @@
 			        $("#viewdata").html(msg);
 			    }).fail(function(jqXHR, textStatus) {
 			        alert("Request failed: " + textStatus);
-			    });
-			}
-
-			$('#btn1').click(function() {
-				//alert();
-				var mode = '1';
-			    $.ajax({
-			        type: "POST",
-			        url: "product_modal.php",
-			        data: {
-			            mode: mode
-			        },
-			        success: function(response) {
-			            //alert('add');
-			            $('.modal-content').html(response);
-			        }
-			    });
-			});
-
-			function save() {
-				//alert('yes');
-				var product_name = document.MyForm.product_name.value;
-				var product_img = document.MyForm.product_img.value;
-				if(product_name==""){
-					alert("You did not enter your product name.Please provide it.");
-				}else{
-					 $.ajax({
-				        type: "POST",
-				        url: "save_product.php",
-				        data: $('#modal_form').serialize()+ '&product_img=' + product_img,
-
-				    }).done(function(msg) {
-				        alert(msg);
-				        //viewdata();
-				        window.location.href = 'product_details.php';
-				    }).fail(function() {
-				        alert("error");
-				    });
-				}
-			}
-
-			function updatedata(code) {
-				var product_img = document.MyForm.product_img.value;
-			    $.ajax({
-			        type: "POST",
-			        url: "update_product.php",
-			        data : $('#modal_form').serialize()+ '&product_img=' + product_img,
-
-			    }).done(function(msg) {
-			        alert(msg);
-			        viewdata();
-			    }).fail(function() {
-			        alert("error");
 			    });
 			}
 		</script>
