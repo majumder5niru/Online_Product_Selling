@@ -52,15 +52,15 @@
                     <label for="" class="col-sm-4 control-label input-sm">Expiration Date:</label>
                     <div class="col-sm-3">
                         <select class="form-control input-sm" id="expiration-month">
-                            <option value="1">January</option>
-                            <option value="2">February</option>
-                            <option value="3">March</option>
-                            <option value="4">April</option>
-                            <option value="5">May</option>
-                            <option value="6">June</option>
-                            <option value="7">July</option>
-                            <option value="8">August</option>
-                            <option value="9">September</option>
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
                             <option value="10">October</option>
                             <option value="11">November</option>
                             <option value="12">December</option>
@@ -69,7 +69,7 @@
                     <div class="col-sm-3">
                         <select class="form-control input-sm" id="expiration-year">
                             <?php 
-                                $yearRange = 20;
+                               $yearRange = 20;
                                 $thisYear = date('Y');
                                 $startYear = ($thisYear + $yearRange);
                              
@@ -80,8 +80,21 @@
                                     } else {
                                         print '<option value="'.$year.'">' . $year . '</option>';
                                     }
-                                }
+                                } 
+                                
                             ?>
+                            <!--<option value="17">2017</option>
+                                <option value="18">2018</option>
+                                <option value="19">2019</option>
+                                <option value="20">2020</option>
+                                <option value="21">2021</option>
+                                <option value="22">2022</option>
+                                <option value="23">2023</option>
+                                <option value="24">2024</option>
+                                <option value="25">2025</option>
+                                <option value="26">2026</option>
+                                <option value="27">2027</option>
+                                <option value="28">2028</option> -->
                         </select>
                     </div>
                 </div>
