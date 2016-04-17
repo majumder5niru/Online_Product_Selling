@@ -18,12 +18,16 @@
      
     <body>
         <center><h2>Payment Form</h2></center>
+        <?php
+            $product_id = $_POST['product_id'];
+        ?>
         <div class="row">
             <form id="buy-form" method="post" action="javascript:">
                 <div class="form-group col-sm-6">
                     <label for="first-name" class="col-sm-4 control-label input-sm">First Name:</label>
                     <div class="col-sm-8">
                         <input type="text" class="form-control input-sm" id="first-name" name="first-name" spellcheck="false">
+                        <input type="hidden" name="product_id" value="<?php echo $product_id;?>">
                     </div>
                 </div>
                 <div class="form-group col-sm-6">
@@ -101,7 +105,7 @@
             function save() {
                     $.ajax({
                         type: "POST",
-                        url: "sold_product.php",
+                        url: "sold.php",
                         data: $('#buy-form').serialize(),
 
                     }).done(function(msg) {

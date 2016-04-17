@@ -29,12 +29,10 @@
 			$res = mysql_query("SELECT product_id,product_name,product_image,price,description FROM products");
 			$i = 1;
 			while ($row = mysql_fetch_array($res))
-			{
-					
-					//$s = $row['product_image'];
-					//header("Content-type: image/jpeg");
-					//echo $row['product_image'];
-
+			{	
+				//$s = $row['product_image'];
+				//header("Content-type: image/jpeg");
+				//echo $row['product_image'];
 			?>
 			<tr>
 				<td><?php echo $i;?></td>
@@ -44,14 +42,14 @@
 				<td><?php echo $row['description'];?></td>
 				<td>
 					<form action="buy.php" method="post">
-					<button class="btn btn-primary btn-xs" > Buy</button>
-					<input type="hidden" name="product_id" value="<?php echo $product_id;?>">
+						<button class="btn btn-primary btn-xs" > Buy</button>
+						<input type="hidden" name="product_id" value="<?php echo $row['product_id'];?>">
 					</form>
 				</td>
 			</tr>
 			
 			<?php
-			$i++;
+				$i++;
 			}
 			?>	
 		</table>
