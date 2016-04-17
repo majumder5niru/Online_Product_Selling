@@ -117,6 +117,6 @@
 		</html>
 	<?php 
 	}else{
-		echo "Sorry, You can not access this page.";
+		echo "You don't have access to this page. Please Log in as Admin..";
 	}
 ?>
