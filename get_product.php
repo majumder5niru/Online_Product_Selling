@@ -34,7 +34,7 @@
 		</td>
 		<td>
 			<form action="delete.php" method="post">
-				<button class="btn btn-danger btn-xs" onclick="ConfirmDelete(<?php echo $row['product_id'];?>)"  >Delete</button>
+				<button class="btn btn-danger btn-xs" onclick="ConfirmDelete()"  >Delete</button>
 				<input type="hidden" name="product_id"id="product_id" value="<?php echo $row['product_id'];?>">
 			</form>
 		</td>
@@ -78,7 +78,7 @@
 </script>
 <script type="text/javascript">
 
-  function ConfirmDelete(product_id)
+  function ConfirmDelete()
   {		
     confirm("Delete Product?")           
   }
