@@ -7,7 +7,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="scripts/jquery.js"></script>
         <script src="scripts/Stripe.js"></script>
 
         <script>
