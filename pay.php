@@ -10,7 +10,7 @@
 	require_once('Stripe.php'); 
 	 
 	$trialAPIKey = "pk_test_PWmjQPeZC81feLtSudjGiVwu";  
-	//$liveAPIKey = "4BYrmtvwLb8iiiq9KIdbnRh5KCeSfPsX";
+	$liveAPIKey = "4BYrmtvwLb8iiiq9KIdbnRh5KCeSfPsX";
 	 
 	Stripe::setApiKey($trialAPIKey);  
 	 
