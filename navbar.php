@@ -13,8 +13,7 @@
         <li><a href = "change_pass.php">Change Password</a></li>
         <li><a href = "update_profile.php">Update Profile</a></li>
         <li><a href = "product_details.php">Product Details</a></li>
-        <li><a href = "buy_product.php">Buy Product</a></li>
-        <li><a href = "contact.php">Contact Us</a></li>
+        <li><a href = "show_product.php">Buy Product</a></li>
       </ul> 
       <ul class="nav navbar-nav navbar-right">
       <li><a href="logout.php">Log Out </a></li>
